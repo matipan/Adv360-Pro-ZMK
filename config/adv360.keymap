@@ -78,19 +78,19 @@
             bindings = <
 &trans  &trans     &trans     &trans  &trans      &trans       &kp K_COPY                                                            &trans  &trans            &trans       &trans                &trans                 &trans      &trans
 &trans  &kp LG(Q)  &kp LG(M)  &trans  &trans      &kp LG(T)    &trans                                                                &trans  &kp LESS_THAN     &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &trans
-&trans  &trans     &trans     &trans  &bl BL_TOG  &bl BL_INC   &bl BL_DEC        &bt BT_PRV      &bt BT_NXT      &trans  &trans      &trans  &kp GREATER_THAN  &kp EQUAL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR  &kp LG(UP_ARROW)
-&trans  &trans     &trans     &trans  &bt BT_CLR  &bootloader                                    &bt BT_CLR      &trans                      &kp TILDE         &kp GRAVE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp LG(DOWN)
+&trans  &trans     &trans     &trans  &bl BL_TOG  &bl BL_INC   &bl BL_DEC        &bt BT_PRV      &bt BT_NXT      &trans  &trans      &trans  &kp GREATER_THAN  &kp EQUAL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR  &kp LG(LC(UP_ARROW))
+&trans  &trans     &trans     &trans  &bt BT_CLR  &bootloader                                    &bt BT_CLR      &trans                      &kp TILDE         &kp GRAVE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp LG(LC(DOWN))
 &trans  &trans     &trans     &trans  &trans                   &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &trans          &trans  &kp K_NEXT  &trans                    &trans       &trans                &trans                 &trans      &trans
             >;
         };
 
         mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none                                            &trans           &none  &none       &none       &none  &none  &none
+&none  &none             &none             &none             &none             &none  &none                                            &bootloader      &none  &none       &none       &none  &none  &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none  &none  &none      &bt BT_CLR  &none       &none            &none  &none       &none       &none  &none  &none
+&none  &none             &none             &none             &none             &none                &none      &none                                    &none  &none       &none       &none  &none  &none
+&none  &none             &none             &none             &none                    &none  &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
