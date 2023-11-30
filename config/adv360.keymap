@@ -86,11 +86,11 @@
 
         mod {
             bindings = <
-&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none                                            &trans           &none  &none       &none       &none  &none  &none
-&none  &none             &none             &none             &none             &none  &none                                            &bootloader      &none  &none       &none       &none  &none  &none
-&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none  &none  &none      &bt BT_CLR  &none       &none            &none  &none       &none       &none  &none  &none
-&none  &none             &none             &none             &none             &none                &none      &none                                    &none  &none       &none       &none  &none  &none
-&none  &none             &none             &none             &none                    &none  &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none                                            &trans           &none  &none         &none         &none         &none  &none
+&none  &none             &none             &none             &none             &none  &none                                            &bootloader      &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none  &none  &none      &bt BT_CLR  &none       &none            &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
+&none  &none             &none             &none             &none             &none                &none      &none                                    &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
+&none  &none             &none             &none             &none                    &none  &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &none         &kp N0        &none         &none  &none
             >;
         };
     };
