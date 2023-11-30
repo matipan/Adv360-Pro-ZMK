@@ -18,6 +18,13 @@
             bindings = <&kp RET>;
         };
 
+        super_up: super_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LG(UP_ARROW)>;
+            label = "SUPER_UP";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -49,31 +56,31 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                        &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL      &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                            &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &ht LCTRL TAB  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL       &kp N1       &kp N2  &kp N3    &kp N4     &kp N5  &kp K_COPY                                                                                &kp K_PASTE  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp F11
+&kp LEFT_BRACE  &kp Q        &kp W   &kp E     &kp R      &kp T   &kp RIGHT_BRACE                                                                           &none        &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&mo 2           &kp A        &kp S   &kp D     &kp F      &kp G   &kp ESCAPE       &kp RIGHT_CONTROL  &kp RIGHT_ALT         &kp LEFT_CONTROL  &kp LEFT_ALT  &none        &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT       &kp Z        &kp X   &kp C     &kp V      &kp B                                       &kp LEFT_COMMAND      &kp PG_UP                                    &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
+&kp LEFT_ALT    &kp LG(TAB)  &mo 1   &kp LEFT  &kp RIGHT          &ht LCTRL TAB    &kp BACKSPACE      &kp LEFT_SHIFT        &kp EQUAL         &kp ENTER     &kp SPACE            &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
-        keypad {
+        functions {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6                                                     &kp F7      &kp F8      &kp F9      &kp F10      &kp F11      &kp F12      &kp MINUS
+&kp TAB    &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp LA(F4)  &kp LA(F5)  &kp LA(F6)                                                 &kp LA(F7)  &kp LA(F8)  &kp LA(F9)  &kp LA(F10)  &kp LA(F11)  &kp LA(F12)  &kp BSLH
+&none      &none       &none       &none       &none       &none       &none       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none       &none       &none       &none        &none        &none        &kp SQT
+&kp LSHFT  &none       &none       &none       &none       &none                              &kp HOME      &kp PG_UP                         &none       &none       &none        &none        &none        &none
+&mo 0      &kp GRAVE   &kp CAPS    &kp LEFT    &kp RIGHT               &kp BSPC    &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0               &kp UP      &kp DOWN     &none        &none        &none
             >;
         };
 
-        fn {
+        symbols {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&trans  &trans     &trans     &trans  &trans      &trans       &kp K_COPY                                                        &trans  &trans            &trans       &trans                &trans                 &trans      &trans
+&trans  &kp LG(Q)  &kp LG(M)  &trans  &trans      &kp LG(T)    &trans                                                            &trans  &kp LESS_THAN     &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &trans
+&trans  &trans     &trans     &trans  &bl BL_TOG  &bl BL_INC   &bl BL_DEC        &trans          &trans      &trans  &trans      &trans  &kp GREATER_THAN  &kp EQUAL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR  &kp LG(UP_ARROW)
+&trans  &trans     &trans     &trans  &trans      &bootloader                                    &trans      &trans                      &kp TILDE         &kp GRAVE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp LG(DOWN)
+&trans  &trans     &trans     &trans  &trans                   &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &trans      &trans  &kp K_NEXT  &trans                    &trans       &trans                &trans                 &trans      &trans
             >;
         };
 
