@@ -56,7 +56,7 @@
 
         default_layer {
             bindings = <
-&kp GRAVE       &kp N1       &kp N2  &kp N3    &kp N4     &kp N5  &kp K_COPY                                                                               &kp K_PASTE      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp F11
+&kp GRAVE       &kp N1       &kp N2  &kp N3    &kp N4     &kp N5  &kp LC(C)                                                                                &kp LC(V)        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp F11
 &kp LEFT_BRACE  &kp Q        &kp W   &kp E     &kp R      &kp T   &kp LEFT_BRACE                                                                           &kp RIGHT_BRACE  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &mo 2           &kp A        &kp S   &kp D     &kp F      &kp G   &kp ESCAPE      &kp RIGHT_CONTROL  &kp RIGHT_ALT         &kp LEFT_CONTROL  &kp LEFT_ALT  &none            &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp ESCAPE      &kp Z        &kp X   &kp C     &kp V      &kp B                                      &kp LEFT_COMMAND      &kp PG_UP                                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
@@ -76,21 +76,21 @@
 
         symbols {
             bindings = <
-&trans  &trans     &trans     &trans  &trans      &trans       &kp K_COPY                                                            &trans  &trans            &trans       &trans                &trans                 &trans      &trans
-&trans  &kp LG(Q)  &kp LG(M)  &trans  &trans      &kp LG(T)    &trans                                                                &trans  &kp LESS_THAN     &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &trans
-&trans  &trans     &trans     &trans  &bl BL_TOG  &bl BL_INC   &bl BL_DEC        &bt BT_PRV      &bt BT_NXT      &trans  &trans      &trans  &kp GREATER_THAN  &kp EQUAL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR  &kp LG(LC(UP_ARROW))
-&trans  &trans     &trans     &trans  &bt BT_CLR  &bootloader                                    &bt BT_CLR      &trans                      &kp TILDE         &kp GRAVE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp LG(LC(DOWN))
-&trans  &trans     &trans     &trans  &trans                   &kp K_PLAY_PAUSE  &kp K_PREVIOUS  &trans          &trans  &kp K_NEXT  &trans                    &trans       &trans                &trans                 &trans      &trans
+&trans  &trans     &trans     &trans  &trans      &trans       &trans                                                             &trans           &trans            &trans       &trans                &trans                 &trans      &trans
+&trans  &kp LG(Q)  &kp LG(M)  &trans  &trans      &kp LG(T)    &kp C_VOLUME_DOWN                                                  &kp C_VOLUME_UP  &kp LESS_THAN     &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &trans
+&trans  &trans     &trans     &trans  &bl BL_TOG  &bl BL_INC   &bl BL_DEC         &bt BT_PRV  &bt BT_NXT      &trans  &trans      &trans           &kp GREATER_THAN  &kp EQUAL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR  &kp LG(LC(UP_ARROW))
+&trans  &trans     &trans     &trans  &bt BT_CLR  &bootloader                                 &bt BT_CLR      &trans                               &kp TILDE         &kp GRAVE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp LG(LC(DOWN))
+&trans  &trans     &trans     &trans  &trans                   &kp C_PP           &kp C_PREV  &trans          &trans  &kp C_NEXT  &trans                             &trans       &trans                &trans                 &trans      &trans
             >;
         };
 
         mod {
             bindings = <
-&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none                                            &trans           		&none  &none         &none         &none         &none  &none
-&none  &none             &none             &none             &none             &none  &none                                            &none            		&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
-&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none  &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5 	&none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
-&none  &none             &none             &none             &none             &none                &none      &none                                    &none  	&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
-&none  &none             &none             &none             &none                    &none  &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         	&none         &kp N0        &none         &none  &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none                                            &trans                  &none  &none         &none         &none         &none  &none
+&none  &none             &none             &none             &none             &none  &none                                            &none                   &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none  &none  &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
+&none  &none             &none             &none             &none             &none                &none      &none                                           &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
+&none  &none             &none             &none             &none                    &none  &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &none         &kp N0        &none         &none  &none
             >;
         };
     };
