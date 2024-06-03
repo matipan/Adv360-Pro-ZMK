@@ -76,11 +76,11 @@
 
         symbols {
             bindings = <
-&trans  &trans     &trans     &trans      &trans      &trans       &trans                                                                     &trans           &trans            &trans       &trans                &trans                 &trans      &trans
-&trans  &kp LG(Q)  &kp LG(M)  &trans      &trans      &kp LG(T)    &kp C_VOLUME_DOWN                                                          &kp C_VOLUME_UP  &kp LESS_THAN     &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &trans
-&trans  &trans     &trans     &trans      &bl BL_TOG  &bl BL_INC   &kp C_PREV         &bt BT_PRV        &bt BT_NXT      &trans  &trans        &kp C_NEXT       &kp GREATER_THAN  &kp EQUAL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR  &kp LG(LC(UP_ARROW))
-&trans  &trans     &trans     &bt BT_NXT  &bt BT_CLR  &bootloader                                       &bt BT_CLR      &trans                                 &kp TILDE         &kp GRAVE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp LG(LC(DOWN))
-&trans  &trans     &trans     &trans      &kp C_PP                 &kp LG(DOWN)       &kp LG(UP_ARROW)  &trans          &trans  &kp LG(LEFT)  &kp LG(RIGHT)                      &trans       &trans                &trans                 &trans      &trans
+&trans  &trans     &trans     &trans      &trans      &trans       &trans                                                                       &trans           &trans            &trans       &trans                &trans                 &trans      &trans
+&trans  &kp LG(Q)  &kp LG(M)  &trans      &trans      &kp LG(T)    &kp C_VOLUME_DOWN                                                            &kp C_VOLUME_UP  &kp LESS_THAN     &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &trans
+&trans  &trans     &trans     &trans      &bl BL_TOG  &bl BL_INC   &kp C_PREV         &bt BT_PRV          &bt BT_NXT      &trans  &trans        &kp C_NEXT       &kp GREATER_THAN  &kp EQUAL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR  &kp LG(LC(UP_ARROW))
+&trans  &trans     &trans     &bt BT_NXT  &bt BT_CLR  &bootloader                                         &bt BT_CLR      &trans                                 &kp TILDE         &kp GRAVE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp LG(LC(DOWN))
+&trans  &trans     &trans     &trans      &kp C_PP                 &kp LG(UP_ARROW)   &kp LG(DOWN_ARROW)  &trans          &trans  &kp LG(LEFT)  &kp LG(RIGHT)                      &trans       &trans                &trans                 &trans      &trans
             >;
         };
 
